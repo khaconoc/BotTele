@@ -5,7 +5,7 @@ const TelegramBot = require('node-telegram-bot-api');
 
 // replace the value below with the Telegram token you receive from @BotFather
 const token = '661955063:AAHAbSp8vLrrTJr93o086aV4T_l7QSa9BIs';
-
+// const token = '958243249:AAGPY-9S_yV3V1X56H2y65PyESDySE-mtsM';
 // Create a bot that uses 'polling' to fetch new updates
 const bot = new TelegramBot(token, {polling: true});
 
@@ -56,7 +56,7 @@ const chatSisimi = async (text) => {
     let config = {
         method: 'POST',
         headers: {
-            'x-api-key': 'QPyg/fViDbp7ftTYBit1esDr+GZXO+IlSwyH23cZ',
+            'x-api-key': 'f4oaBjotM/VSE5Rgx3akA3JjFX+g3sIJUBCWz/Fc',
             'Content-Type': 'application/json'
         },
         url: 'https://wsapi.simsimi.com/190410/talk',
