@@ -44,7 +44,12 @@ bot.on('message', async (msg) => {
     } else if (msg.text === undefined) {
         bot.sendPhoto(chatId, 'https://www.thehippocket.com.au/wp-content/uploads/2016/06/shrug-770x447.jpg');
     } else {
+        console.log(msg)
         rep = await chatSisimi(msg.text);
+        if(rep===''){
+            rep='😊'
+        }
+        console.log('res sisimi',rep)
         bot.sendMessage(chatId, rep);
     }
     console.log(msg.chat.first_name + ' '+msg.chat.last_name+' : '+ msg.text);
